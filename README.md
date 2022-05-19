@@ -6,19 +6,14 @@ Objective of this repository is to learn test driven development, write unit tes
 
 - Ruby
 
-## How to run
+## How to run the test
 
 ```
 git clone https://github.com/muneebulrehman/TDD-project.git
 cd TDD-project
+gem install rspec
+rspec spec
 ```
-
-Open bash or wsl ubuntu and type
-`./solver.rb`
-
-If that doesnt work
-
-`ruby ./solver.rb`
 
 ## Authors
 
