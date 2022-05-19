@@ -1,29 +1,26 @@
 class Solver
-  def factorial n
+  def factorial(num)
     # return factorial
     result = 1
-    (1..n).each{|i| result *= i} unless n < 1
+    (1..num).each { |i| result *= i } unless num < 1
     result
   end
 
-  def reverse word
-    word.split('').reverse.join('')
+  def reverse(word)
+    word.chars.reverse.join
   end
 
-  
-  def fizzbuzz n
-    f = n % 3 == 0 ? nil : 1 
-    b = n % 5 == 0 ? nil : 1
-    if (f && b) 
-      return n.to_s
+  def fizzbuzz(num)
+    f = (num % 3).zero? ? nil : 1
+    b = (num % 5).zero? ? nil : 1
+    if f && b
+      num.to_s
     elsif f
-      return 'buzz'
+      'buzz'
     elsif b
-      return 'fizz'
-    else 
-      return 'fizzbuzz'
+      'fizz'
+    else
+      'fizzbuzz'
     end
   end
-
 end
-

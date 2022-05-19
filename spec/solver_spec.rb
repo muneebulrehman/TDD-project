@@ -35,6 +35,4 @@ describe Solver do
       expect(@instance.fizzbuzz(7)).to eq('7')
     end
   end
-
-  
-end 
+end
