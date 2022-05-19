@@ -13,6 +13,11 @@ describe Solver do
     it 'factorial of 0 should be 1' do
       expect(@instance.factorial(0)).to eq(1)
     end
+
+    it "should raise exception if integer is negative" do
+      expect {@instance.factorial(-2)}.to raise_exception
+    end
+    
   end
 
   context :reverse do
