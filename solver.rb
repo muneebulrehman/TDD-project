@@ -1,7 +1,8 @@
 class Solver
   def factorial(num)
     # return factorial
-    raise "Error! Please enter positive integer." if num<0 
+    raise 'Error! Please enter positive integer.' if num.negative?
+
     result = 1
     (1..num).each { |i| result *= i } unless num < 1
     result

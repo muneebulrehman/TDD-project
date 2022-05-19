@@ -14,10 +14,9 @@ describe Solver do
       expect(@instance.factorial(0)).to eq(1)
     end
 
-    it "should raise exception if integer is negative" do
-      expect {@instance.factorial(-2)}.to raise_exception
+    it 'should raise exception if integer is negative' do
+      expect { @instance.factorial(-2) }.to raise_exception
     end
-    
   end
 
   context :reverse do
